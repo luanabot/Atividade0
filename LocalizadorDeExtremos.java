@@ -17,17 +17,17 @@ public class LocalizadorDeExtremos {
         int menor;
         int soma = 0;
 
-        // Preenchendo o vetor com números aleatórios
+        // Gerando números aleatórios para o array
         for (int i = 0; i < tamanho; i++) {
             vetor[i] = random.nextInt(100); // números de 0 a 99
         }
 
-        // Inicializando maior e menor com o primeiro valor
+        // Inicia o maior e o menor na localização da lista
         maior = vetor[0];
         menor = vetor[0];
 
-        // Mostrando os valores e calculando maior, menor e soma
-        System.out.println("\nValores do vetor:");
+        // Mostra os números, compara qual maior e qual menor e a soma dos números
+        System.out.println("Valores do vetor:");
         for (int i = 0; i < tamanho; i++) {
             System.out.print(vetor[i] + " ");
 
@@ -44,7 +44,7 @@ public class LocalizadorDeExtremos {
 
         double media = (double) soma / tamanho;
 
-        System.out.println("\n\nMaior valor: " + maior);
+        System.out.println("\nMaior valor: " + maior);
         System.out.println("Menor valor: " + menor);
         System.out.println("Média: " + media);
 
